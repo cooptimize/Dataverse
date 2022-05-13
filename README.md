@@ -5,7 +5,7 @@ Code to help reporting from a Data Lake synced to a Dataverse.
 * When you publish your Dataverse Environment to the Lake, use the Synapse Workspace option. This option actually changes the entire structure and names of the Data Lake folders and files. 
 * We haven't tested (nor will we) on the folder structure generated when Synapse Workspace is turned off.
 
-#Choice Metadata
+# Choice Metadata
 One of the challenges of Data Lake reporting is merging in Choices to the raw tables ("Option Sets", "Global Option Sets", "Enums", "Dataverse Integer Fields"). This code helps do this either using M Query or SQL On-Demand.
 
 Here is Microsoft's article on resolving Choice Labels: https://docs.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-choice-labels
