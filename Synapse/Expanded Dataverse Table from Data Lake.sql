@@ -1,7 +1,13 @@
 /****************************************************************************************************************************************
-The purpose of this query is to create the external tables and /****************************************************************************************************************************************
-User Parameters
-*****************************************************************************************************************************************/
+The purpose of this query is to create external tables and views that automatically resolve Option Sets for Dataverse tables.
+Prerequistes include:
+	1. Create an external data source to the data lake using Shared Access Signature
+	Example script - https://github.com/cooptimize/Dataverse/blob/main/Synapse/External%20data%20source.sql
+	
+	2. Create an external file format for CSV
+	Example script - https://github.com/cooptimize/Dataverse/blob/main/Synapse/External%20file%20format.sql
+
+Run this against the Synapse Serverless pool you want the objects to be created in
 *****************************************************************************************************************************************/
 
 
@@ -20,6 +26,9 @@ DECLARE @Table NVARCHAR(MAX) = ''
 DECLARE @Columns NVARCHAR(MAX) = ''
 
 
+/****************************************************************************************************************************************
+If you want to store this as a stored procedure delete or comment out the user parameters above and uncomment the section below.
+*****************************************************************************************************************************************/
 
 --CREATE PROCEDURE dbo.sp_DataverseExternalTablesandViews
 
@@ -456,9 +465,15 @@ END
 ELSE
 BEGIN
 
+/****************************************************************************************************************************************
+Return if no table prefix or suffix is supplied
+*****************************************************************************************************************************************/
+
+
+
 SELECT '/*********************************************************************************************' + CHAR(13) AS [Error]
 UNION ALL
-SELECT 'Table prefix parameter is required' + CHAR(13)
+SELECT 'Table prefix or suffix parameter is required' + CHAR(13)
 UNION ALL
 SELECT '*********************************************************************************************/' + CHAR(13)
 
