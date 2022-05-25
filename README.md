@@ -14,3 +14,6 @@ Having to merge in labels one field at a time is very time consuming. We've writ
 
 # Dataflows Folder
 These are JSON files that need to be imported as Dataflows. Once imported, the M functions could be used elsewhere in Power Query.
+
+# Synapse Folder
+These are SQL files that need to be exectued against a Synapse serverless or dedicated pool.
