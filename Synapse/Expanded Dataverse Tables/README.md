@@ -9,4 +9,4 @@ An external file format is used by Synapse external tables and views to define t
 For Dataverse data is stored in CSV, thus the file format defines the comma delimiter as a field terminator.
 
 # Expanded Dataverse Table from Data Lake
-Modifying integers that represent text is a key part of consuming Dataverse data from a Data Lake. However, many of the published solutions tell you to do this process one integer at a time or don’t create an identical schema to the TDS endpoint.
+Modifying integers that represent text is a key part of consuming Dataverse data from a Data Lake. However, many of the published solutions tell you to do this process one integer at a time or don’t create an identical schema to the TDS endpoint. We’ve come up with a better way.
