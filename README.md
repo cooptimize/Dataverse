@@ -9,9 +9,11 @@ One of the challenges of Data Lake reporting is merging in Choices to the raw ta
 Having to merge in labels one field at a time is very time consuming. All the options presented in here use recursive functions to resolve the Option Sets. Which basically means it all happens at once instead of having to do joins one field at a time.
 
 # Folders
-1. Dataflows - JSON files for importing as Dataflows
-2. Power BI Desktop - .pbit file
-3. Synapse - SQL functions and stored procedures
+| Folder | Purpose |
+| --- | ---- |
+| Dataflows | JSON files for importing as Dataflows |
+| Power BI Desktop | .pbit file |
+| Synapse | SQL functions and stored procedures |
 
 # Reference Documentation
 - Microsoft Docs [Resolving Choice Labels](https://docs.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-choice-labels)
