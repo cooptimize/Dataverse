@@ -1,4 +1,4 @@
-Import these as Dataflows. PowerBI.com Workspace > + New Dataflow > Import Model
+Import these as Dataflows. *PowerBI.com Workspace > + New Dataflow > Import Model*
 
 | File | Purpose |
 | --- | ----------- |
